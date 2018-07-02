@@ -115,9 +115,10 @@ public class Juego extends javax.swing.JFrame {
                 btnReiniciar.setEnabled(true);
                 
             } 
-            if(numero <aleatorio){ 
-                txtSalida.append(numero+" es bajo !!\n");
+            else if(numero <aleatorio){ 
                 getContentPane().setBackground(Color.blue);
+                txtSalida.append(numero+" es bajo !!\n");
+                
             }else{ 
             txtSalida.append(numero+ "es alto !!\n");
             txtNumero.setText("");
